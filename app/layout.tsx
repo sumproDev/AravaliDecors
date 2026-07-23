@@ -22,24 +22,24 @@ const body = Manrope({
 export const metadata: Metadata = {
   metadataBase: new URL("https://aravalimarbles.in"),
   title: {
-    default: "Aravali Marbles | Granite, Marble, Tiles & Flooring",
+    default: "Aravali Marbles | Tiles, Plumbing & Interior Products",
     template: "%s | Aravali Marbles",
   },
   description:
-    "Premium marble, PVC panels, decorative wall panels, tiles, WPC louvers, flooring and bathroom fittings with installation support across Delhi NCR.",
+    "Floor and wall tiles, pipes and fittings, sanitaryware, plywood, tanks, adhesives, composite granite and interior designing across Delhi NCR.",
   keywords: [
     "Aravali Marbles",
-    "marble supplier Delhi NCR",
-    "PVC wall panels",
-    "floor tiles",
-    "WPC louvers",
-    "SPC flooring",
+    "floor and wall tiles",
+    "pipes and fittings",
+    "sanitaryware and faucets",
+    "water tanks",
+    "composite granite",
   ],
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Aravali Marbles | Surfaces Crafted for Remarkable Spaces",
+    title: "Aravali Marbles | Complete Product Collections",
     description:
-      "Premium marble, tiles, PVC panels and flooring—supplied and installed with care.",
+      "Tiles, plumbing products, sanitaryware, interior materials and focused interior designing services.",
     type: "website",
     locale: "en_IN",
     siteName: "Aravali Marbles",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Aravali Marbles",
-    description: "Premium materials. Precise finishes.",
+    description: "Complete product collections and interior designing services.",
     images: ["/og.png"],
   },
 };

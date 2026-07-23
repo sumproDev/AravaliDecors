@@ -4,7 +4,7 @@ import { AboutSection } from "@/components/home/AboutSection";
 import { StatsSection } from "@/components/home/StatsSection";
 import { FeaturedProducts } from "@/components/home/FeaturedProducts";
 import { WhyChooseUs } from "@/components/home/WhyChooseUs";
-import { ApplicationsSection } from "@/components/home/ApplicationsSection";
+import { ServicesSection } from "@/components/home/ServicesSection";
 import { ProcessSection } from "@/components/home/ProcessSection";
 import { TestimonialsSection } from "@/components/home/TestimonialsSection";
 import { BrandPartners } from "@/components/home/BrandPartners";
@@ -15,7 +15,7 @@ const jsonLd = {
   "@type": "HomeAndConstructionBusiness",
   name: "Aravali Marbles",
   description:
-    "Premium marble, PVC panels, tiles, wall panels, flooring and bathroom fittings with supply and installation support.",
+    "Floor and wall tiles, pipes and fittings, sanitaryware, plywood, tanks, adhesives, composite granite and interior designing.",
   areaServed: "Delhi NCR",
   telephone: "+91-98765-43210",
   address: {
@@ -41,7 +41,7 @@ export default function HomePage() {
         <StatsSection />
         <FeaturedProducts />
         <WhyChooseUs />
-        <ApplicationsSection />
+        <ServicesSection />
         <ProcessSection />
         <TestimonialsSection />
         <BrandPartners />

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Clock3, Mail, MapPin, MessageCircle, Phone, Ruler, SwatchBook, WalletCards } from "lucide-react";
 import { PageHero } from "@/components/shared/PageHero";
+import { ContactEnquiryForm } from "@/components/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title: "Contact Aravali Marbles",
@@ -62,6 +63,23 @@ export default function ContactPage() {
           <a href="mailto:hello@aravalimarbles.in"><Mail /><span>Email us</span><strong>hello@aravalimarbles.in</strong><small>Send plans, measurements or references</small></a>
           <a href="https://wa.me/919876543210" target="_blank" rel="noreferrer"><MessageCircle /><span>WhatsApp</span><strong>Start a conversation</strong><small>Quick product and availability enquiries</small></a>
           <div><MapPin /><span>Service area</span><strong>Delhi NCR, India</strong><small>Residential and commercial requirements</small></div>
+        </div>
+      </section>
+
+      <section className="section contact-enquiry-section">
+        <div className="shell contact-enquiry-layout">
+          <div className="contact-enquiry-copy">
+            <p className="eyebrow">Quick enquiry</p>
+            <h2>Let Us Help With Your Requirement</h2>
+            <p>Tell us what you are looking for and where the project is located. Include approximate measurements, quantities or design preferences if available.</p>
+            <div className="contact-enquiry-points">
+              <span>Product availability</span>
+              <span>Pricing and estimates</span>
+              <span>Interior design requirements</span>
+              <span>Fitting and installation guidance</span>
+            </div>
+          </div>
+          <ContactEnquiryForm />
         </div>
       </section>
 

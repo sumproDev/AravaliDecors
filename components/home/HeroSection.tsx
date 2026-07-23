@@ -14,7 +14,7 @@ export function HeroSection() {
         <div className="hero-copy">
           <p className="eyebrow eyebrow--line">We design. We decorate. You deserve the best.</p>
           <h1>Transforming Spaces<br />Into <em>Masterpieces</em></h1>
-          <p className="hero-intro">From wall tiles to marble works and modern bathroom fittings — we bring style, quality, and perfection to every corner of your space.</p>
+          <p className="hero-intro">Explore floor and wall tiles, plumbing, sanitaryware, plywood, tanks, adhesives, composite granite and focused interior designing services.</p>
           <div className="hero-actions">
             <Link className="button button--red" href="/products">Explore products <ArrowRight /></Link>
             <Link className="button button--outline" href="/projects">View projects</Link>

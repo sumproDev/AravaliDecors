@@ -7,8 +7,8 @@ import { ProcessSection } from "@/components/home/ProcessSection";
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: "Learn about Aravali Marbles, a Delhi NCR surface-material partner for granite, marble, wall and floor tiles, panels, flooring and fitting support.",
-  keywords: ["about Aravali Marbles", "stone supplier Delhi NCR", "marble and granite experts", "tile selection and installation support"],
+  description: "Learn about Aravali Marbles, a Delhi NCR supplier of tiles, plumbing products, sanitaryware, interior materials, tanks, adhesives and composite granite.",
+  keywords: ["about Aravali Marbles", "tiles supplier Delhi NCR", "pipes and fittings", "sanitaryware supplier", "interior products"],
   alternates: { canonical: "/about" },
   openGraph: {
     title: "About Aravali Marbles",
@@ -42,7 +42,7 @@ export default function AboutPage() {
             <p className="eyebrow">A dependable material partner</p>
             <h2>Helping Delhi NCR Build Better-Looking, Longer-Lasting Interiors</h2>
             <p>Choosing a surface is about more than colour. The right material must suit the room, expected footfall, moisture exposure, cleaning routine, installation base and overall design language. We bring these considerations together so customers can make clearer, more confident decisions.</p>
-            <p>Our collection covers natural granite and marble, wall and floor tiles, marble-finish sheets, decorative wall panels, WPC louvers, SPC and vinyl flooring, and bathroom surface solutions. Whether the requirement is one feature wall or a coordinated multi-room project, the process begins with understanding how the space will actually be used.</p>
+            <p>Our collection covers floor and wall tiles, pipes and fittings, sanitaryware and faucets, plywood, laminates, doors and frames, tanks, adhesives and composite granite. Interior designing services include modular kitchens, wardrobes, false ceilings, wall panels and TV cabinets.</p>
           </div>
           <div className="editorial-image">
             <Image src="/images/hero/stone-gallery-hero-v2.png" alt="Granite, marble and tile samples in a premium materials gallery" fill sizes="(max-width: 800px) 100vw, 48vw" />

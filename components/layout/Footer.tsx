@@ -1,9 +1,7 @@
 import { CircleUserRound, Mail, MapPin, Phone, Play, Share2 } from "lucide-react";
 import Link from "next/link";
 import { Logo } from "@/components/shared/Logo";
-import { navigation } from "@/data/site-data";
-
-const productLinks = ["Wall & Floor Tiles", "PVC Panels", "Marble Sheets", "WPC Louvers", "Flooring", "Bathroom Fittings"];
+import { categories, navigation } from "@/data/site-data";
 
 export function Footer() {
   return (
@@ -11,7 +9,7 @@ export function Footer() {
       <div className="shell footer-grid">
         <div className="footer-brand">
           <Link href="/" aria-label="Aravali Marbles home"><Logo inverse /></Link>
-          <p>Premium marble, PVC panels, tiles, flooring, wall products and bathroom solutions for residential and commercial spaces.</p>
+          <p>Floor and wall tiles, pipes and fittings, sanitaryware, plywood, tanks, adhesives, composite granite and interior designing.</p>
           <div className="socials" aria-label="Social media">
             <a href="#" aria-label="Facebook"><CircleUserRound /></a>
             <a href="#" aria-label="Instagram"><Share2 /></a>
@@ -24,7 +22,7 @@ export function Footer() {
         </div>
         <div className="footer-column">
           <h3>Our Collection</h3>
-          {productLinks.map((link) => <Link key={link} href="/products">{link}</Link>)}
+          {categories.slice(0, 6).map((category) => <Link key={category.title} href={category.href}>{category.title}</Link>)}
         </div>
         <div className="footer-column footer-contact">
           <h3>Contact Us</h3>

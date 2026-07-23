@@ -1,10 +1,12 @@
 import type { MetadataRoute } from "next";
+import { productCollections } from "@/data/site-data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://aravalimarbles.in";
-  const routes = ["", "/about", "/products", "/applications", "/projects", "/contact"];
+  const routes = ["", "/about", "/products", "/services", "/projects", "/contact"];
+  const productRoutes = productCollections.map((collection) => `/products/${collection.slug}`);
 
-  return routes.map((route): MetadataRoute.Sitemap[number] => ({
+  return [...routes, ...productRoutes].map((route): MetadataRoute.Sitemap[number] => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
     changeFrequency: route === "" ? "weekly" : "monthly",

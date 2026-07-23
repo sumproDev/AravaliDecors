@@ -17,8 +17,8 @@ export function AboutSection() {
       </div>
       <div className="about-copy">
         <SectionHeading eyebrow="About Aravali Marbles" title="Materials That Make Every Space Stand Out" align="left" />
-        <p>Aravali Marbles supplies premium finishing materials for residential and commercial projects. From modern PVC panels and imported tiles to marble sheets, flooring and bathroom products, we help customers choose durable, stylish and cost-effective solutions.</p>
-        <p>Our experienced team supports you with selection, measurements, cutting, fitting and complete installation assistance.</p>
+        <p>Aravali Marbles brings together floor and wall tiles, pipes and fittings, sanitaryware, plywood, laminates, doors and frames, tanks, adhesives and composite granite for residential and commercial requirements.</p>
+        <p>Our interior designing services focus on modular kitchens, wardrobes, false ceilings, wall panels and customized TV cabinets.</p>
         <div className="about-benefits">
           {benefits.map(({ icon: Icon, label, detail }) => (
             <div key={label}><Icon /><strong>{label}</strong><span>{detail}</span></div>

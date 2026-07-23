@@ -59,6 +59,7 @@ export function Header() {
           {navigation.map((item) => (
             <Link key={item.href} href={item.href} onClick={() => setOpen(false)}>{item.label}</Link>
           ))}
+          <Link className="mobile-nav__quote" href="/contact" onClick={() => setOpen(false)}>Get a quote</Link>
           <a href="tel:+919876543210" onClick={() => setOpen(false)}><Phone /> +91 98765 43210</a>
         </nav>
       </div>

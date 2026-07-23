@@ -1,7 +1,7 @@
 import { MessageCircle, Phone } from "lucide-react";
 
 const message = encodeURIComponent(
-  "Hello, I would like to know more about your marble, PVC, tiles and flooring products.",
+  "Hello, I would like to know more about your product collections and interior designing services.",
 );
 
 export function FloatingActions() {

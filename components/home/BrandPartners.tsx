@@ -1,4 +1,4 @@
-const brands = ["Kajaria", "SOMANY", "ORIENTBELL", "GREENPANEL", "CENTURY", "MERINO", "ALSTONE", "RESPONSIVE"];
+const brands = ["SUPREME", "CERA", "VECTUS", "BERGER", "FERROUS CRETE", "GREENPANEL", "CENTURY", "MERINO"];
 
 export function BrandPartners() {
   return (

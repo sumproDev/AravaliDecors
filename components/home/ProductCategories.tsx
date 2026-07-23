@@ -9,12 +9,12 @@ export function ProductCategories() {
   return (
     <section className="section categories-section">
       <div className="shell">
-        <SectionHeading title="What We Offer" intro="Complete material solutions for walls, floors, ceilings and bathrooms." />
+        <SectionHeading title="What We Offer" intro="Eight focused product and interior categories, each organized into its own collection." />
         <div className="category-grid">
           {categories.map((category) => {
             const Icon = iconMap[category.icon as keyof typeof iconMap];
             return (
-              <Link className="category-card" href="/products" key={category.title}>
+              <Link className="category-card" href={category.href} key={category.title}>
                 <Icon />
                 <h3>{category.title}</h3>
                 <p>{category.text}</p>
