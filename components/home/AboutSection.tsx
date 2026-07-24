@@ -13,7 +13,7 @@ export function AboutSection() {
   return (
     <section id="about" className="about-section">
       <div className="about-image">
-        <Image src="/images/about/showroom.jpg" alt="Warm modern dining space with refined surface finishes" fill sizes="(max-width: 800px) 100vw, 50vw" />
+        <Image src="/images/services/modular-kitchen.jpg" alt="Modern modular kitchen with coordinated cabinets and countertops" fill sizes="(max-width: 800px) 100vw, 50vw" />
       </div>
       <div className="about-copy">
         <SectionHeading eyebrow="About Aravali Marbles" title="Materials That Make Every Space Stand Out" align="left" />
