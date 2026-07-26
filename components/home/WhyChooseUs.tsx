@@ -7,7 +7,7 @@ const reasons = [
   { icon: Boxes, title: "Large Ready Stock", text: "A broad selection of popular surfaces, colours, patterns and dimensions." },
   { icon: Ruler, title: "Cutting & Custom Sizing", text: "Accurate sizing to reduce waste and make on-site installation smoother." },
   { icon: Wrench, title: "Professional Fitting Support", text: "Skilled assistance for a clean, aligned and lasting finish." },
-  { icon: Truck, title: "Delivery Across Delhi NCR", text: "Coordinated supply with dependable timelines for homes and project sites." },
+  { icon: Truck, title: "Delivery Across Purnea & Nearby Bihar", text: "Coordinated supply across Purnea, Katihar and surrounding regions with dependable timelines." },
 ];
 
 export function WhyChooseUs() {

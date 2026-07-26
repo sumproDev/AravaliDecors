@@ -4,11 +4,8 @@ const brands = [
   { name: "Supreme", logo: "/images/brands/supreme-logo.png" },
   { name: "CERA", logo: "/images/brands/cera-logo.svg" },
   { name: "Vectus", logo: "/images/brands/vectus-logo.png" },
-  { name: "Berger", logo: "/images/brands/berger-logo.png" },
   { name: "Ferrous Crete", logo: "/images/brands/ferrous-crete-logo.png" },
   { name: "Greenpanel", logo: "/images/brands/greenpanel-logo.png" },
-  { name: "CenturyPly", logo: "/images/brands/centuryply-logo.png" },
-  { name: "Merino", logo: "/images/brands/merino-logo.svg" },
 ];
 
 export function BrandPartners() {

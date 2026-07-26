@@ -36,6 +36,12 @@ export default function ServicesPage() {
           <div className="prose-stack">
             <p>Good interior design brings storage, materials, lighting and finishes together in a practical plan. Every service begins with the available space and how it needs to work.</p>
             <p>Choose one focused service or coordinate several interior elements for a consistent result across the room.</p>
+            <ul className="check-list">
+              <li>Layouts planned around room dimensions and movement</li>
+              <li>Coordinated materials, colours, lighting and finishes</li>
+              <li>Practical storage designed for everyday routines</li>
+              <li>Clear guidance from initial idea to final detailing</li>
+            </ul>
           </div>
         </div>
       </section>

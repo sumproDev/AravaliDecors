@@ -16,11 +16,13 @@ const jsonLd = {
   name: "Aravali Marbles",
   description:
     "Floor and wall tiles, pipes and fittings, sanitaryware, plywood, tanks, adhesives, composite granite and interior designing.",
-  areaServed: "Delhi NCR",
-  telephone: "+91-98765-43210",
+  areaServed: ["Purnea", "Katihar", "Araria", "Kishanganj", "Madhepura", "Bhagalpur"],
+  telephone: ["+91-76540-02202", "+91-62039-00400"],
+  email: "aravalimarbles001@gmail.com",
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Delhi NCR",
+    addressLocality: "Purnea",
+    addressRegion: "Bihar",
     addressCountry: "IN",
   },
 };

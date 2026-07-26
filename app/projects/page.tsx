@@ -8,7 +8,7 @@ import { ProcessSection } from "@/components/home/ProcessSection";
 export const metadata: Metadata = {
   title: "Surface Projects & Design Possibilities",
   description: "Explore marble, granite, tile, wall-panel and flooring project possibilities for living spaces, bathrooms, offices, retail and hospitality interiors.",
-  keywords: ["marble interior projects", "granite flooring projects", "tile installation ideas", "wall panel projects Delhi NCR", "commercial surface projects"],
+  keywords: ["marble interior projects", "granite flooring projects", "tile installation ideas", "wall panel projects Purnea", "commercial surface projects Bihar"],
   alternates: { canonical: "/projects" },
   openGraph: {
     title: "Surface Project Ideas by Aravali Marbles",
@@ -48,7 +48,16 @@ export default function ProjectsPage() {
       <section className="section page-intro-section">
         <div className="shell content-columns">
           <div><p className="eyebrow">Project possibilities</p><h2>See Materials as Part of a Complete Interior</h2></div>
-          <div className="prose-stack"><p>Successful surface projects are coordinated rather than collected. The wall finish, floor format, adjoining joinery, light temperature and viewing distance should support one another. This page brings together practical design directions to help customers visualise how individual products can become a complete material story.</p><p>Every site is different. These examples are intended as inspiration for residential and commercial briefs and can be adapted around room dimensions, budget, use and preferred maintenance level.</p></div>
+          <div className="prose-stack">
+            <p>Successful surface projects are coordinated rather than collected. The wall finish, floor format, adjoining joinery, light temperature and viewing distance should support one another. This page brings together practical design directions to help customers visualise how individual products can become a complete material story.</p>
+            <p>Every site is different. These examples are intended as inspiration for residential and commercial briefs and can be adapted around room dimensions, budget, use and preferred maintenance level.</p>
+            <ul className="check-list">
+              <li>Room-specific material and finish selection</li>
+              <li>Coordinated wall, floor and feature surfaces</li>
+              <li>Layouts adapted to scale, lighting and daily use</li>
+              <li>Practical planning for fitting and maintenance</li>
+            </ul>
+          </div>
         </div>
       </section>
 

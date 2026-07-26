@@ -26,9 +26,10 @@ export function Footer() {
         </div>
         <div className="footer-column footer-contact">
           <h3>Contact Us</h3>
-          <p><MapPin /> Delhi NCR, India</p>
-          <a href="tel:+919876543210"><Phone /> +91 98765 43210</a>
-          <a href="mailto:hello@aravalimarbles.in"><Mail /> hello@aravalimarbles.in</a>
+          <p><MapPin /> Purnea, Katihar & nearby Bihar</p>
+          <a href="tel:+917654002202"><Phone /> +91 76540 02202</a>
+          <a href="tel:+916203900400"><Phone /> +91 62039 00400</a>
+          <a href="mailto:aravalimarbles001@gmail.com"><Mail /> aravalimarbles001@gmail.com</a>
           <p>Mon–Sat · 10:00 AM–7:00 PM</p>
         </div>
       </div>

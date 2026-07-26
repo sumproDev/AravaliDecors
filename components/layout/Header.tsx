@@ -60,7 +60,7 @@ export function Header() {
             <Link key={item.href} href={item.href} onClick={() => setOpen(false)}>{item.label}</Link>
           ))}
           <Link className="mobile-nav__quote" href="/contact" onClick={() => setOpen(false)}>Get a quote</Link>
-          <a href="tel:+919876543210" onClick={() => setOpen(false)}><Phone /> +91 98765 43210</a>
+          <a href="tel:+917654002202" onClick={() => setOpen(false)}><Phone /> +91 76540 02202</a>
         </nav>
       </div>
     </header>

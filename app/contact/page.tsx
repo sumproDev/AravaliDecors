@@ -5,14 +5,14 @@ import { ContactEnquiryForm } from "@/components/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title: "Contact Aravali Marbles",
-  description: "Contact Aravali Marbles for granite, marble, wall and floor tiles, panels, flooring, product selection, estimates and installation support in Delhi NCR.",
-  keywords: ["contact Aravali Marbles", "marble supplier Delhi NCR contact", "granite tile quotation", "tile showroom Delhi NCR", "surface installation enquiry"],
+  description: "Contact Aravali Marbles for granite, marble, wall and floor tiles, panels, flooring, product selection, estimates and installation support in Purnea, Katihar and nearby Bihar.",
+  keywords: ["contact Aravali Marbles", "marble supplier Purnea contact", "tile showroom Purnea", "tiles supplier Katihar", "granite tile quotation Bihar", "surface installation enquiry"],
   alternates: { canonical: "/contact" },
   openGraph: {
     title: "Contact Aravali Marbles",
     description: "Discuss product selection, measurements, pricing and fitting support with our surface-material team.",
     url: "/contact",
-    images: [{ url: "/images/about/showroom.jpg", alt: "Contact Aravali Marbles in Delhi NCR" }],
+    images: [{ url: "/images/about/showroom.jpg", alt: "Contact Aravali Marbles in Purnea, Bihar" }],
   },
 };
 
@@ -20,7 +20,7 @@ const faqs = [
   { question: "What information should I share for an initial estimate?", answer: "Room type, approximate dimensions, wall or floor application, preferred material or look, project location and any inspiration images are helpful starting points." },
   { question: "Can you help me choose between granite, marble and tiles?", answer: "Yes. We compare appearance, application, finish, traffic, moisture, maintenance and budget so the recommendation is relevant to the actual space." },
   { question: "Do you support measurements and installation?", answer: "Our team can assist with measurement, estimation, cutting, fitting and installation coordination depending on the material and project requirement." },
-  { question: "Do you work on residential and commercial requirements?", answer: "Yes. We support homes, offices, shops, showrooms, restaurants, hotels and other interior surface requirements across Delhi NCR." },
+  { question: "Do you work on residential and commercial requirements?", answer: "Yes. We support homes, offices, shops, showrooms, restaurants, hotels and other interior surface requirements across Purnea, Katihar, Araria, Kishanganj, Madhepura and Bhagalpur." },
 ];
 
 const contactJsonLd = {
@@ -28,9 +28,9 @@ const contactJsonLd = {
   "@type": "HomeAndConstructionBusiness",
   name: "Aravali Marbles",
   url: "https://aravalimarbles.in/contact",
-  telephone: "+91-98765-43210",
-  email: "hello@aravalimarbles.in",
-  areaServed: "Delhi NCR",
+  telephone: ["+91-76540-02202", "+91-62039-00400"],
+  email: "aravalimarbles001@gmail.com",
+  areaServed: ["Purnea", "Katihar", "Araria", "Kishanganj", "Madhepura", "Bhagalpur"],
   openingHours: "Mo-Sa 10:00-19:00",
 };
 
@@ -59,10 +59,10 @@ export default function ContactPage() {
 
       <section className="section page-intro-section">
         <div className="shell contact-card-grid">
-          <a href="tel:+919876543210"><Phone /><span>Call us</span><strong>+91 98765 43210</strong><small>Discuss your requirement directly</small></a>
-          <a href="mailto:hello@aravalimarbles.in"><Mail /><span>Email us</span><strong>hello@aravalimarbles.in</strong><small>Send plans, measurements or references</small></a>
-          <a href="https://wa.me/919876543210" target="_blank" rel="noreferrer"><MessageCircle /><span>WhatsApp</span><strong>Start a conversation</strong><small>Quick product and availability enquiries</small></a>
-          <div><MapPin /><span>Service area</span><strong>Delhi NCR, India</strong><small>Residential and commercial requirements</small></div>
+          <div className="contact-card"><Phone /><span>Call us</span><strong><a href="tel:+917654002202">+91 76540 02202</a><br /><a href="tel:+916203900400">+91 62039 00400</a></strong><small>Speak directly with our team about products, pricing and project requirements.</small></div>
+          <a className="contact-card" href="mailto:aravalimarbles001@gmail.com"><Mail /><span>Email us</span><strong>aravalimarbles001@gmail.com</strong><small>Send plans, measurements, quantities or design references for a detailed response.</small></a>
+          <a className="contact-card" href="https://wa.me/917654002202" target="_blank" rel="noreferrer"><MessageCircle /><span>WhatsApp</span><strong>Start a conversation</strong><small>Share product photos and get quick availability or selection assistance.</small></a>
+          <div className="contact-card"><MapPin /><span>Service area</span><strong>Purnea, Katihar & Nearby Bihar</strong><small>Serving residential and commercial requirements across the surrounding region.</small></div>
         </div>
       </section>
 
@@ -90,7 +90,7 @@ export default function ContactPage() {
             <h2>Speak With a Surface Specialist</h2>
             <p>Whether you already know the exact material or are still comparing options, a few project details help us guide you more effectively. Share the intended room, approximate area, preferred finish, location and expected timeline.</p>
             <div className="contact-hours"><Clock3 /><div><strong>Business hours</strong><span>Monday–Saturday · 10:00 AM–7:00 PM</span></div></div>
-            <div className="contact-hours"><MapPin /><div><strong>Service region</strong><span>Delhi NCR and surrounding project locations</span></div></div>
+            <div className="contact-hours"><MapPin /><div><strong>Service region</strong><span>Purnea, Katihar, Araria, Kishanganj, Madhepura and Bhagalpur</span></div></div>
           </div>
           <div className="enquiry-panel">
             <p className="eyebrow">Useful enquiry details</p>
@@ -101,7 +101,7 @@ export default function ContactPage() {
               <li><WalletCards /><span><strong>Budget direction</strong>A practical range helps us shortlist efficiently</span></li>
               <li><Clock3 /><span><strong>Project timeline</strong>Expected selection, delivery and installation dates</span></li>
             </ul>
-            <a className="button button--red" href="mailto:hello@aravalimarbles.in?subject=Surface%20Project%20Enquiry">Email your project details</a>
+            <a className="button button--red" href="mailto:aravalimarbles001@gmail.com?subject=Surface%20Project%20Enquiry">Email your project details</a>
           </div>
         </div>
       </section>

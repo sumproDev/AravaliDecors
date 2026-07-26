@@ -33,7 +33,7 @@ export function ContactEnquiryForm() {
     ].join("\n");
 
     window.open(
-      `https://wa.me/919876543210?text=${encodeURIComponent(message)}`,
+      `https://wa.me/917654002202?text=${encodeURIComponent(message)}`,
       "_blank",
       "noopener,noreferrer",
     );
@@ -54,7 +54,7 @@ export function ContactEnquiryForm() {
         </label>
         <label>
           <span>Phone number *</span>
-          <input name="phone" type="tel" autoComplete="tel" inputMode="tel" placeholder="+91 98765 43210" required />
+          <input name="phone" type="tel" autoComplete="tel" inputMode="tel" placeholder="+91 76540 02202" required />
         </label>
         <label>
           <span>Email address</span>

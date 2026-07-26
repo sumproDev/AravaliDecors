@@ -124,7 +124,7 @@ export const productCollections: ProductCollection[] = [
     imageAlt: "Tile and construction adhesive product range",
     icon: "Gem",
     items: [
-      { name: "Berger Products", description: "Berger construction-chemical and adhesive products for selected installation requirements.", image: "/images/adhesives/berger-home-shield-tile-adhesive-plus-bag.jpg", imageAlt: "Berger Home Shield Tile Adhesive Plus client product image" },
+      { name: "Berger Adhesives", description: "Berger tile and construction adhesives for selected installation requirements.", image: "/images/adhesives/berger-home-shield-tile-adhesive-plus-bag.jpg", imageAlt: "Berger Home Shield Tile Adhesive Plus client product image" },
       { name: "Ferrous Crete Tile Fixer", description: "Tile-fixing adhesive for secure and consistent tile installation.", image: "/images/adhesives/ferrous-crete-ferro-1111-tile-fixer-bag.jpg", imageAlt: "Ferrous Crete Ferro 1111 tile fixer client product image" },
       { name: "Tile Adhesives", description: "Application-specific fixing solutions for ceramic, vitrified and porcelain tiles.", image: "/images/adhesives/ferrous-crete-tile-adhesive-benefits.jpg", imageAlt: "Ferrous Crete tile adhesive product benefits" },
       { name: "Marble & Granite Adhesives", description: "Bonding products suited to natural and composite stone applications.", image: "/images/adhesives/ferrous-crete-ferro-1130-natural-stone-adhesive.jpg", imageAlt: "Ferrous Crete Ferro 1130 adhesive for natural stone" },
@@ -176,7 +176,7 @@ export const services = [
 ];
 
 export const testimonials = [
-  { quote: "The team helped us choose the right wall and floor tiles and explained every option clearly. The final selection looks excellent in our home.", name: "Rajesh Sharma", location: "Noida" },
-  { quote: "We found the pipe fittings, sanitaryware and tank products we needed in one place. The recommendations were practical and transparent.", name: "Meera Kapoor", location: "Gurugram" },
-  { quote: "Our modular kitchen and wardrobes were planned professionally, with careful attention to storage and finishes.", name: "Amit Verma", location: "Delhi" },
+  { quote: "The team helped us choose the right wall and floor tiles and explained every option clearly. The final selection looks excellent in our home.", name: "Rajesh Sharma", location: "Purnea" },
+  { quote: "We found the pipe fittings, sanitaryware and tank products we needed in one place. The recommendations were practical and transparent.", name: "Meera Kapoor", location: "Katihar" },
+  { quote: "Our modular kitchen and wardrobes were planned professionally, with careful attention to storage and finishes.", name: "Amit Verma", location: "Araria" },
 ];

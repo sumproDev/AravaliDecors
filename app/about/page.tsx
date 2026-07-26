@@ -7,8 +7,8 @@ import { ProcessSection } from "@/components/home/ProcessSection";
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: "Learn about Aravali Marbles, a Delhi NCR supplier of tiles, plumbing products, sanitaryware, interior materials, tanks, adhesives and composite granite.",
-  keywords: ["about Aravali Marbles", "tiles supplier Delhi NCR", "pipes and fittings", "sanitaryware supplier", "interior products"],
+  description: "Learn about Aravali Marbles, a Purnea-based supplier of tiles, plumbing products, sanitaryware, interior materials, tanks, adhesives and composite granite serving nearby Bihar.",
+  keywords: ["about Aravali Marbles", "tiles supplier Purnea", "tiles supplier Katihar", "pipes and fittings", "sanitaryware supplier Bihar", "interior products"],
   alternates: { canonical: "/about" },
   openGraph: {
     title: "About Aravali Marbles",
@@ -40,7 +40,7 @@ export default function AboutPage() {
         <div className="shell editorial-split">
           <div className="editorial-copy">
             <p className="eyebrow">A dependable material partner</p>
-            <h2>Helping Delhi NCR Build Better-Looking, Longer-Lasting Interiors</h2>
+            <h2>Helping Purnea, Katihar & Nearby Bihar Build Better-Looking, Longer-Lasting Interiors</h2>
             <p>Choosing a surface is about more than colour. The right material must suit the room, expected footfall, moisture exposure, cleaning routine, installation base and overall design language. We bring these considerations together so customers can make clearer, more confident decisions.</p>
             <p>Our collection covers floor and wall tiles, pipes and fittings, sanitaryware and faucets, plywood, laminates, doors and frames, tanks, adhesives and composite granite. Interior designing services include modular kitchens, wardrobes, false ceilings, wall panels and TV cabinets.</p>
           </div>

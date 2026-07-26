@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     template: "%s | Aravali Marbles",
   },
   description:
-    "Floor and wall tiles, pipes and fittings, sanitaryware, plywood, tanks, adhesives, composite granite and interior designing across Delhi NCR.",
+    "Floor and wall tiles, pipes and fittings, sanitaryware, plywood, tanks, adhesives, composite granite and interior designing across Purnea, Katihar and nearby Bihar.",
   keywords: [
     "Aravali Marbles",
     "floor and wall tiles",

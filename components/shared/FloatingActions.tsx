@@ -8,7 +8,7 @@ export function FloatingActions() {
   return (
     <div className="floating-actions" aria-label="Quick contact actions">
       <a
-        href={`https://wa.me/919876543210?text=${message}`}
+        href={`https://wa.me/917654002202?text=${message}`}
         target="_blank"
         rel="noreferrer"
         aria-label="Message Aravali Marbles on WhatsApp"
