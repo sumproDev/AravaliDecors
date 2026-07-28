@@ -11,9 +11,9 @@ export function Footer() {
           <Link href="/" aria-label="Aravali Marbles home"><Logo inverse /></Link>
           <p>Floor and wall tiles, pipes and fittings, sanitaryware, plywood, tanks, adhesives, composite granite and interior designing.</p>
           <div className="socials" aria-label="Social media">
-            <a href="#" aria-label="Facebook"><CircleUserRound /></a>
-            <a href="#" aria-label="Instagram"><Share2 /></a>
-            <a href="#" aria-label="YouTube"><Play /></a>
+            <a href="https://www.facebook.com/aravalimarbles.co.in/" target="_blank" rel="noreferrer" aria-label="Facebook"><CircleUserRound /></a>
+            <a href="https://www.instagram.com/aravali.marbles/" target="_blank" rel="noreferrer" aria-label="Instagram"><Share2 /></a>
+            <a href="https://www.facebook.com/aravalimarbles.co.in/videos/" target="_blank" rel="noreferrer" aria-label="Videos"><Play /></a>
           </div>
         </div>
         <div className="footer-column">
@@ -35,7 +35,7 @@ export function Footer() {
       </div>
       <div className="shell footer-bottom">
         <p>© {new Date().getFullYear()} Aravali Marbles. All rights reserved.</p>
-        <p><a href="#">Privacy Policy</a><span>·</span><a href="#">Terms & Conditions</a></p>
+        <p><Link href="/contact">Privacy Policy</Link><span>·</span><Link href="/contact">Terms & Conditions</Link></p>
       </div>
     </footer>
   );

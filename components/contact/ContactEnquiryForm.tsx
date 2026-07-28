@@ -16,15 +16,26 @@ const enquiryTypes = [
 ];
 
 export function ContactEnquiryForm() {
+  const sanitizeName = (value: string) => value.replace(/[^A-Za-z\s.'-]/g, "");
+  const sanitizePhone = (value: string) => value.replace(/\D/g, "").slice(0, 10);
+
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     const formData = new FormData(event.currentTarget);
+    const name = String(formData.get("name") || "").trim();
+    const phone = String(formData.get("phone") || "").trim();
+
+    if (!/^[A-Za-z][A-Za-z\s.'-]{1,}$/.test(name) || !/^[6-9]\d{9}$/.test(phone)) {
+      event.currentTarget.reportValidity();
+      return;
+    }
+
     const message = [
       "Hello, I would like to make an enquiry.",
       "",
-      `Name: ${formData.get("name")}`,
-      `Phone: ${formData.get("phone")}`,
+      `Name: ${name}`,
+      `Phone: ${phone}`,
       `Email: ${formData.get("email") || "Not provided"}`,
       `Requirement: ${formData.get("requirement")}`,
       `Project location: ${formData.get("location") || "Not provided"}`,
@@ -50,11 +61,35 @@ export function ContactEnquiryForm() {
       <div className="contact-form-grid">
         <label>
           <span>Full name *</span>
-          <input name="name" type="text" autoComplete="name" placeholder="Your name" required />
+          <input
+            name="name"
+            type="text"
+            autoComplete="name"
+            placeholder="Your name"
+            pattern="[A-Za-z][A-Za-z\s.'-]{1,}"
+            title="Please enter a valid name without numbers."
+            onInput={(event) => {
+              event.currentTarget.value = sanitizeName(event.currentTarget.value);
+            }}
+            required
+          />
         </label>
         <label>
           <span>Phone number *</span>
-          <input name="phone" type="tel" autoComplete="tel" inputMode="tel" placeholder="+91 76540 02202" required />
+          <input
+            name="phone"
+            type="tel"
+            autoComplete="tel"
+            inputMode="numeric"
+            placeholder="7654002202"
+            pattern="[6-9][0-9]{9}"
+            maxLength={10}
+            title="Please enter a valid 10-digit Indian mobile number."
+            onInput={(event) => {
+              event.currentTarget.value = sanitizePhone(event.currentTarget.value);
+            }}
+            required
+          />
         </label>
         <label>
           <span>Email address</span>

@@ -66,14 +66,14 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="section contact-enquiry-section">
+      <section id="enquiry" className="section contact-enquiry-section">
         <div className="shell contact-enquiry-layout">
           <div className="contact-enquiry-copy">
             <p className="eyebrow">Quick enquiry</p>
             <h2>Let Us Help With Your Requirement</h2>
             <p>Tell us what you are looking for and where the project is located. Include approximate measurements, quantities or design preferences if available.</p>
             <div className="contact-enquiry-points">
-              <span>Product availability</span>
+              <span className="contact-enquiry-points__highlight">Product availability</span>
               <span>Pricing and estimates</span>
               <span>Interior design requirements</span>
               <span>Fitting and installation guidance</span>
@@ -89,7 +89,7 @@ export default function ContactPage() {
             <p className="eyebrow">Plan your visit or call</p>
             <h2>Speak With a Surface Specialist</h2>
             <p>Whether you already know the exact material or are still comparing options, a few project details help us guide you more effectively. Share the intended room, approximate area, preferred finish, location and expected timeline.</p>
-            <div className="contact-hours"><Clock3 /><div><strong>Business hours</strong><span>Monday–Saturday · 10:00 AM–7:00 PM</span></div></div>
+            <div className="contact-hours contact-hours--highlight"><Clock3 /><div><strong>Business hours / availability</strong><span>Open Monday–Saturday · 10:00 AM–7:00 PM</span></div></div>
             <div className="contact-hours"><MapPin /><div><strong>Service region</strong><span>Purnea, Katihar, Araria, Kishanganj, Madhepura and Bhagalpur</span></div></div>
           </div>
           <div className="enquiry-panel">

@@ -137,11 +137,11 @@ export const productCollections: ProductCollection[] = [
     shortTitle: "Composite Granite",
     intro: "Engineered granite surfaces combining consistent appearance with practical durability.",
     description: "Explore composite granite for counters, vanities, floors, stairs and coordinated architectural details.",
-    image: "/images/composite-granite/kitchen-countertops.jpg",
+    image: "/images/composite-granite/flooring.jpg",
     imageAlt: "Composite granite slabs and finished surface samples",
     icon: "Gem",
     items: [
-      { name: "Kitchen Countertops", description: "Durable, easy-care composite granite surfaces for everyday kitchen use.", image: "/images/composite-granite/kitchen-countertops.jpg", imageAlt: "Granite kitchen countertop installation" },
+      { name: "Kitchen Countertops", description: "Durable, easy-care composite granite surfaces for everyday kitchen use.", image: "/images/composite-granite/flooring.jpg", imageAlt: "Composite granite kitchen countertop installation" },
       { name: "Bathroom Vanities", description: "Coordinated vanity surfaces with a clean and consistent finish.", image: "/images/composite-granite/bathroom-vanities.jpg", imageAlt: "Granite bathroom vanity surface" },
       { name: "Flooring", description: "Hard-wearing composite granite options for residential and commercial floors.", image: "/images/composite-granite/client-granite-flooring-video-still.jpg", imageAlt: "Polished granite elevator flooring at a client project" },
       { name: "Stairs & Steps", description: "Strong, refined surfaces for stair treads, risers and landings.", image: "/images/composite-granite/client-black-granite-staircase-01.jpg", imageAlt: "Black granite stairs installed at a client project" },

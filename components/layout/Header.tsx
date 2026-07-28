@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, Phone, X } from "lucide-react";
@@ -9,6 +9,7 @@ import { navigation } from "@/data/site-data";
 
 export function Header() {
   const pathname = usePathname();
+  const headerRef = useRef<HTMLElement>(null);
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -20,19 +21,29 @@ export function Header() {
   }, []);
 
   useEffect(() => {
-    document.body.style.overflow = open ? "hidden" : "";
     const closeOnEscape = (event: KeyboardEvent) => {
       if (event.key === "Escape") setOpen(false);
     };
+
+    const closeOnOutsideTap = (event: PointerEvent) => {
+      if (!headerRef.current?.contains(event.target as Node)) {
+        setOpen(false);
+      }
+    };
+
     window.addEventListener("keydown", closeOnEscape);
+    if (open) {
+      document.addEventListener("pointerdown", closeOnOutsideTap);
+    }
+
     return () => {
-      document.body.style.overflow = "";
       window.removeEventListener("keydown", closeOnEscape);
+      document.removeEventListener("pointerdown", closeOnOutsideTap);
     };
   }, [open]);
 
   return (
-    <header className={`site-header ${scrolled ? "site-header--scrolled" : ""}`}>
+    <header ref={headerRef} className={`site-header ${scrolled ? "site-header--scrolled" : ""}`}>
       <div className="shell header-inner">
         <Link href="/" aria-label="Aravali Marbles home"><Logo /></Link>
         <nav className="desktop-nav" aria-label="Primary navigation">
