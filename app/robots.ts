@@ -7,7 +7,7 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: "Bingbot", allow: "/" },
       { userAgent: "*", allow: "/" },
     ],
-    sitemap: "https://aravalimarbles.in/sitemap.xml",
-    host: "https://aravalimarbles.in",
+    sitemap: "https://www.aravalimarbles.co.in/sitemap.xml",
+    host: "https://www.aravalimarbles.co.in",
   };
 }
