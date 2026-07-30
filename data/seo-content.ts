@@ -29,9 +29,6 @@ export type BlogPost = {
   relatedKeywords: string[];
 };
 
-const defaultImage = "/images/hero/stone-gallery-hero-v2.png";
-const defaultImageAlt = "Aravali Marbles product and interior material collection";
-
 const cityCopy: Record<string, string> = {
   Purnia: "Purnea, also searched locally as Purnia",
   Katihar: "Katihar and nearby Bihar",

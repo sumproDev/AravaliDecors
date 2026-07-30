@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Clock3, Mail, MapPin, MessageCircle, Phone, Ruler, SwatchBook, WalletCards } from "lucide-react";
 import { PageHero } from "@/components/shared/PageHero";
 import { ContactEnquiryForm } from "@/components/contact/ContactEnquiryForm";
@@ -31,6 +32,14 @@ const contactJsonLd = {
   telephone: ["+91-76540-02202", "+91-62039-00400"],
   areaServed: ["Purnea", "Katihar", "Araria", "Kishanganj", "Madhepura", "Bhagalpur"],
   openingHours: "Mo-Sa 10:00-19:00",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Near Vijendra Public School, Maranga",
+    addressLocality: "Purnea",
+    addressRegion: "Bihar",
+    postalCode: "854301",
+    addressCountry: "IN",
+  },
 };
 
 const faqJsonLd = {
@@ -59,7 +68,7 @@ export default function ContactPage() {
       <section className="section page-intro-section">
         <div className="shell contact-card-grid">
           <div className="contact-card"><Phone /><span>Call us</span><strong><a href="tel:+917654002202">+91 76540 02202</a><br /><a href="tel:+916203900400">+91 62039 00400</a></strong><small>Speak directly with our team about products, pricing and project requirements.</small></div>
-          <a className="contact-card" href="/contact#enquiry"><Mail /><span>Send enquiry</span><strong>Share project details</strong><small>Send plans, measurements, quantities or design references for a detailed response.</small></a>
+          <Link className="contact-card" href="/contact#enquiry"><Mail /><span>Send enquiry</span><strong>Share project details</strong><small>Send plans, measurements, quantities or design references for a detailed response.</small></Link>
           <a className="contact-card" href="https://wa.me/917654002202" target="_blank" rel="noreferrer"><MessageCircle /><span>WhatsApp</span><strong>Start a conversation</strong><small>Share product photos and get quick availability or selection assistance.</small></a>
           <div className="contact-card"><MapPin /><span>Service area</span><strong>Purnea, Katihar & Nearby Bihar</strong><small>Serving residential and commercial requirements across the surrounding region.</small></div>
         </div>
@@ -100,7 +109,7 @@ export default function ContactPage() {
               <li><WalletCards /><span><strong>Budget direction</strong>A practical range helps us shortlist efficiently</span></li>
               <li><Clock3 /><span><strong>Project timeline</strong>Expected selection, delivery and installation dates</span></li>
             </ul>
-            <a className="button button--red" href="/contact#enquiry">Share your project details</a>
+            <Link className="button button--red" href="/contact#enquiry">Share your project details</Link>
           </div>
         </div>
       </section>
