@@ -173,7 +173,7 @@ export const services = [
   { name: "Wardrobes", text: "Made-to-fit wardrobe and storage solutions designed for the room and your needs.", image: "/images/services/client-custom-wardrobe-video-still.jpg", imageAlt: "Custom wardrobe installed at a client project" },
   { name: "False Ceiling", text: "Clean ceiling designs that coordinate lighting, services and visual character.", image: "/images/services/client-reception-wall-panel-false-ceiling.jpg", imageAlt: "False ceiling and reception design completed for a client" },
   { name: "Wall Panel", text: "Decorative wall-panel concepts that add texture, warmth and a finished look.", image: "/images/services/client-decorative-pooja-wall-unit.jpg", imageAlt: "Decorative illuminated wall unit completed for a client" },
-  { name: "TV Cabinets etc.", text: "Tailored TV cabinets, media walls and related living-room storage solutions.", image: "/images/services/client-tv-console-and-interior-flooring.jpg", imageAlt: "Custom television console and interior flooring at a client project" },
+  { name: "TV Cabinets etc.", text: "Tailored TV cabinets, media walls and related living-room storage solutions.", image: "/images/tv-cabinet/tv-cabinet1.jpeg", imageAlt: "Custom television console and interior flooring at a client project" },
 ];
 
 export const testimonials = [
