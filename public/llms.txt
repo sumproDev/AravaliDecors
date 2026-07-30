@@ -12,12 +12,12 @@ Primary service areas:
 - Nearby Bihar locations
 
 Important website sections:
-- Home: https://aravalimarbles.in/
-- Products: https://aravalimarbles.in/products
-- Services: https://aravalimarbles.in/services
-- Projects: https://aravalimarbles.in/projects
-- Contact: https://aravalimarbles.in/contact
-- Blog: https://aravalimarbles.in/blog
+- Home: https://www.aravalimarbles.co.in/
+- Products: https://www.aravalimarbles.co.in/products
+- Services: https://www.aravalimarbles.co.in/services
+- Projects: https://www.aravalimarbles.co.in/projects
+- Contact: https://www.aravalimarbles.co.in/contact
+- Blog: https://www.aravalimarbles.co.in/blog
 
 Core topics:
 - Best tiles in Purnia
@@ -31,4 +31,4 @@ Core topics:
 Contact:
 - Phone: +91 76540 02202
 - Phone: +91 62039 00400
-- Enquiry form: https://aravalimarbles.in/contact#enquiry
+- Enquiry form: https://www.aravalimarbles.co.in/contact#enquiry

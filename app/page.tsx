@@ -29,12 +29,12 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "HomeGoodsStore",
   name: "Aravali Marbles",
-  url: "https://aravalimarbles.in",
+  url: "https://www.aravalimarbles.co.in",
   description:
     "Floor and wall tiles, pipes and fittings, sanitaryware, plywood, tanks, adhesives, composite granite and interior designing.",
   areaServed: ["Purnea", "Katihar", "Araria", "Kishanganj", "Madhepura", "Bhagalpur"],
   telephone: ["+91-76540-02202", "+91-62039-00400"],
-  image: "https://aravalimarbles.in/og.png",
+  image: "https://www.aravalimarbles.co.in/og.png",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Near Vijendra Public School, Maranga",
@@ -49,7 +49,7 @@ const websiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Aravali Marbles",
-  url: "https://aravalimarbles.in",
+  url: "https://www.aravalimarbles.co.in",
   inLanguage: "en-IN",
   description:
     "Product and service information for Aravali Marbles, a tiles, plumbing, sanitaryware and interior design showroom in Purnea.",

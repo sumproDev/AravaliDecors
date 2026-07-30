@@ -28,7 +28,7 @@ const contactJsonLd = {
   "@context": "https://schema.org",
   "@type": "HomeAndConstructionBusiness",
   name: "Aravali Marbles",
-  url: "https://aravalimarbles.in/contact",
+  url: "https://www.aravalimarbles.co.in/contact",
   telephone: ["+91-76540-02202", "+91-62039-00400"],
   areaServed: ["Purnea", "Katihar", "Araria", "Kishanganj", "Madhepura", "Bhagalpur"],
   openingHours: "Mo-Sa 10:00-19:00",

@@ -51,10 +51,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     "@type": "BlogPosting",
     headline: post.title,
     description: post.metaDescription,
-    image: `https://aravalimarbles.in${post.image}`,
+    image: `https://www.aravalimarbles.co.in${post.image}`,
     author: { "@type": "Organization", name: "Aravali Marbles" },
     publisher: { "@type": "Organization", name: "Aravali Marbles" },
-    mainEntityOfPage: `https://aravalimarbles.in/blog/${post.slug}`,
+    mainEntityOfPage: `https://www.aravalimarbles.co.in/blog/${post.slug}`,
   };
 
   const faqSchema = {

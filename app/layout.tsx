@@ -20,7 +20,7 @@ const body = Manrope({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://aravalimarbles.in"),
+  metadataBase: new URL("https://www.aravalimarbles.co.in"),
   title: {
     default: "Aravali Marbles Purnea | Tiles, Pipes, Sanitaryware & Interiors",
     template: "%s | Aravali Marbles",
@@ -40,6 +40,14 @@ export const metadata: Metadata = {
     "interior designer Purnia",
   ],
   alternates: { canonical: "/" },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png", sizes: "512x512" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: [{ url: "/apple-icon.png", type: "image/png", sizes: "180x180" }],
+  },
   robots: {
     index: true,
     follow: true,
@@ -52,7 +60,7 @@ export const metadata: Metadata = {
     },
   },
   applicationName: "Aravali Marbles",
-  authors: [{ name: "Aravali Marbles", url: "https://aravalimarbles.in" }],
+  authors: [{ name: "Aravali Marbles", url: "https://www.aravalimarbles.co.in" }],
   creator: "Aravali Marbles",
   publisher: "Aravali Marbles",
   category: "Building materials and interior design",
@@ -87,9 +95,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "HomeGoodsStore"],
     name: "Aravali Marbles",
-    url: "https://aravalimarbles.in",
-    logo: "https://aravalimarbles.in/logo.jpeg",
-    image: "https://aravalimarbles.in/og.png",
+    url: "https://www.aravalimarbles.co.in",
+    logo: "https://www.aravalimarbles.co.in/logo.jpeg",
+    image: "https://www.aravalimarbles.co.in/og.png",
     telephone: ["+91-76540-02202", "+91-62039-00400"],
     priceRange: "$$",
     address: {

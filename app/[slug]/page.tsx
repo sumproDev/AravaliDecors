@@ -54,7 +54,7 @@ export default async function SeoLandingPage({ params }: SeoLandingPageProps) {
     provider: {
       "@type": "LocalBusiness",
       name: "Aravali Marbles",
-      url: "https://aravalimarbles.in",
+      url: "https://www.aravalimarbles.co.in",
       telephone: "+91-76540-02202",
     },
     description: page.metaDescription,
