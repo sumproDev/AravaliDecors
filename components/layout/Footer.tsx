@@ -29,7 +29,7 @@ export function Footer() {
           <p><MapPin /> Purnea, Katihar & nearby Bihar</p>
           <a href="tel:+917654002202"><Phone /> +91 76540 02202</a>
           <a href="tel:+916203900400"><Phone /> +91 62039 00400</a>
-          <a href="mailto:aravalimarbles001@gmail.com"><Mail /> aravalimarbles001@gmail.com</a>
+          <Link href="/contact#enquiry"><Mail /> Send a project enquiry</Link>
           <p>Mon–Sat · 10:00 AM–7:00 PM</p>
         </div>
       </div>

@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     template: "%s | Aravali Marbles",
   },
   description:
-    "Floor and wall tiles, pipes and fittings, sanitaryware, plywood, tanks, adhesives, composite granite and interior designing across Purnea, Katihar and nearby Bihar.",
+    "Tiles, plumbing, sanitaryware, plywood, tanks, adhesives, composite granite and interior design in Purnea, Katihar and nearby Bihar.",
   keywords: [
     "Aravali Marbles",
     "floor and wall tiles",
@@ -54,9 +54,42 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": ["LocalBusiness", "HomeGoodsStore"],
+    name: "Aravali Marbles",
+    url: "https://aravalimarbles.in",
+    image: "https://aravalimarbles.in/og.png",
+    telephone: ["+91-76540-02202", "+91-62039-00400"],
+    areaServed: ["Purnea", "Purnia", "Katihar", "Araria", "Kishanganj", "Madhepura", "Bhagalpur", "Bihar"],
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        opens: "10:00",
+        closes: "19:00",
+      },
+    ],
+    sameAs: [
+      "https://www.facebook.com/aravalimarbles.co.in/",
+      "https://www.instagram.com/aravali.marbles/",
+    ],
+    makesOffer: [
+      "Floor and wall tiles",
+      "Pipes and fittings",
+      "Sanitaryware and faucets",
+      "Plywood, laminates and doors",
+      "Water tanks",
+      "Tile adhesives and grouts",
+      "Composite granite",
+      "Interior designing",
+    ],
+  };
+
   return (
     <html lang="en" className={`${heading.variable} ${body.variable}`}>
       <body>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema).replace(/</g, "\\u003c") }} />
         <Header />
         {children}
         <Footer />

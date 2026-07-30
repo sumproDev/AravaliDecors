@@ -25,6 +25,7 @@ export const navigation = [
   { label: "Products", href: "/products" },
   { label: "Services", href: "/services" },
   { label: "Projects", href: "/projects" },
+  { label: "Blog", href: "/blog" },
 ];
 
 export const productCollections: ProductCollection[] = [

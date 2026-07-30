@@ -15,12 +15,7 @@ function RollingNumber({ value, animationRun }: { value: number; animationRun: n
   useEffect(() => {
     if (animationRun === 0) return;
 
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      setDisplayValue(value);
-      return;
-    }
-
-    setDisplayValue(0);
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const duration = 2200;
     let animationFrame = 0;
     let startedAt = 0;
@@ -37,8 +32,14 @@ function RollingNumber({ value, animationRun }: { value: number; animationRun: n
     };
 
     const startDelay = window.setTimeout(() => {
+      if (reducedMotion) {
+        setDisplayValue(value);
+        return;
+      }
+
+      setDisplayValue(0);
       animationFrame = requestAnimationFrame(update);
-    }, 140);
+    }, reducedMotion ? 0 : 140);
 
     return () => {
       window.clearTimeout(startDelay);

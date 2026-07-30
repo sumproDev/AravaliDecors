@@ -18,7 +18,6 @@ const jsonLd = {
     "Floor and wall tiles, pipes and fittings, sanitaryware, plywood, tanks, adhesives, composite granite and interior designing.",
   areaServed: ["Purnea", "Katihar", "Araria", "Kishanganj", "Madhepura", "Bhagalpur"],
   telephone: ["+91-76540-02202", "+91-62039-00400"],
-  email: "aravalimarbles001@gmail.com",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Purnea",
