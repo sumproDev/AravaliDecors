@@ -10,6 +10,7 @@ import { ProcessSection } from "@/components/home/ProcessSection";
 import { TestimonialsSection } from "@/components/home/TestimonialsSection";
 import { BrandPartners } from "@/components/home/BrandPartners";
 import { QuoteCTA } from "@/components/home/QuoteCTA";
+import { getPublishedCollections, getPublishedTestimonials } from "@/lib/cms/public";
 
 export const metadata: Metadata = {
   title: "Aravali Marbles Purnea | Tiles, Pipes, Sanitaryware & Interiors",
@@ -55,7 +56,10 @@ const websiteJsonLd = {
     "Product and service information for Aravali Marbles, a tiles, plumbing, sanitaryware and interior design showroom in Purnea.",
 };
 
-export default function HomePage() {
+export default async function HomePage() {
+  const [collections, testimonials] = await Promise.all([getPublishedCollections(), getPublishedTestimonials()]);
+  const interiorServices = collections.find((collection) => collection.slug === "interior-designing")?.products || [];
+
   return (
     <>
       <script
@@ -72,14 +76,14 @@ export default function HomePage() {
       />
       <main>
         <HeroSection />
-        <ProductCategories />
+        <ProductCategories collections={collections} />
         <AboutSection />
         <StatsSection />
-        <FeaturedProducts />
+        <FeaturedProducts collections={collections} />
         <WhyChooseUs />
-        <ServicesSection />
+        <ServicesSection services={interiorServices} />
         <ProcessSection />
-        <TestimonialsSection />
+        <TestimonialsSection testimonials={testimonials} />
         <BrandPartners />
         <QuoteCTA />
       </main>

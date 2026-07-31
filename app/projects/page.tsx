@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { ClipboardCheck, Layers3, Ruler, Sparkles } from "lucide-react";
+import { getPublishedProjects } from "@/lib/cms/public";
 import { PageHero } from "@/components/shared/PageHero";
 import { PageCTA } from "@/components/shared/PageCTA";
 import { ProcessSection } from "@/components/home/ProcessSection";
@@ -18,15 +19,6 @@ export const metadata: Metadata = {
   },
 };
 
-const projectDirections = [
-  { title: "Bookmatched Living-Room Feature", type: "Marble wall application", image: "/images/products/marble-wall.jpg", text: "Large marble-look surfaces create continuity behind media units and statement walls when veins, joints and lighting are planned together." },
-  { title: "Warm Bedroom Flooring", type: "SPC and resilient flooring", image: "/images/products/bedroom-flooring.jpg", text: "Timber-look flooring brings warmth underfoot while supporting practical cleaning and a calm, coordinated bedroom palette." },
-  { title: "Granite Wall & Floor Gallery", type: "Natural stone application", image: "/images/products/granite-wall-floor-v2.png", text: "Contrasting granite finishes can define wall and floor planes while keeping colour and mineral texture visually connected." },
-  { title: "Refined Bathroom Surfaces", type: "Tiles and vanity finishes", image: "/images/products/bathroom.jpg", text: "A restrained combination of wall tile, safer floor finish and vanity surface gives wet areas clarity and long-term practicality." },
-  { title: "Commercial Statement Interior", type: "High-impact surfaces", image: "/images/products/premium-living.jpg", text: "Durable large-format materials and controlled feature surfaces support a premium identity in customer-facing environments." },
-  { title: "Textured Office Environment", type: "Panels and resilient floors", image: "/images/applications/office.jpg", text: "Wall rhythm, low-maintenance flooring and neutral stone tones can give workplaces depth without visual distraction." },
-];
-
 const support = [
   { icon: Ruler, title: "Site Understanding", text: "Measurements, room proportions, substrate conditions and junctions are considered before quantities and layouts are finalised." },
   { icon: Layers3, title: "Material Coordination", text: "Wall, floor and feature materials are reviewed together so colour, scale, sheen and transitions feel intentional." },
@@ -34,7 +26,9 @@ const support = [
   { icon: ClipboardCheck, title: "Execution Support", text: "Cutting, fitting, installation sequencing and final care guidance help protect the chosen design direction on site." },
 ];
 
-export default function ProjectsPage() {
+export default async function ProjectsPage() {
+  const projects = await getPublishedProjects();
+
   return (
     <main className="inner-page">
       <PageHero
@@ -65,10 +59,10 @@ export default function ProjectsPage() {
         <div className="shell">
           <div className="page-section-heading"><p className="eyebrow">Selected directions</p><h2>Ideas for Walls, Floors and Feature Surfaces</h2></div>
           <div className="projects-gallery">
-            {projectDirections.map((project, index) => (
-              <article className={index === 0 || index === 5 ? "projects-gallery__wide" : ""} key={project.title}>
-                <div className="projects-gallery__image"><Image src={project.image} alt={project.title} fill sizes="(max-width: 700px) 100vw, 50vw" /></div>
-                <div className="projects-gallery__copy"><span>{project.type}</span><h3>{project.title}</h3><p>{project.text}</p></div>
+            {projects.map((project) => (
+              <article className={project.isFeatured ? "projects-gallery__wide" : ""} key={project.id}>
+                <div className="projects-gallery__image"><Image src={project.image} alt={project.imageAlt} fill sizes="(max-width: 700px) 100vw, 50vw" /></div>
+                <div className="projects-gallery__copy"><span>{project.type}</span><h3>{project.title}</h3><p>{project.description}</p></div>
               </article>
             ))}
           </div>

@@ -1,10 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { categories } from "@/data/site-data";
 import { SectionHeading } from "@/components/shared/SectionHeading";
+import type { CmsCollection } from "@/lib/cms/public";
 
-export function FeaturedProducts() {
+function collectionHref(collection: CmsCollection) {
+  return collection.slug === "interior-designing" ? "/services" : `/products/${collection.slug}`;
+}
+
+export function FeaturedProducts({ collections }: { collections: CmsCollection[] }) {
   return (
     <section id="products" className="section products-section">
       <div className="shell">
@@ -14,13 +18,13 @@ export function FeaturedProducts() {
           intro="Open any collection to view the related products available inside it."
         />
         <div id="projects" className="product-grid">
-          {categories.map((category) => (
-            <Link className="product-card" href={category.href} key={category.title}>
+          {collections.map((collection) => (
+            <Link className="product-card" href={collectionHref(collection)} key={collection.id}>
               <div className="product-image">
-                <Image src={category.image} alt={category.title} fill sizes="(max-width: 640px) 100vw, (max-width: 1000px) 50vw, 25vw" />
+                <Image src={collection.image} alt={collection.imageAlt} fill sizes="(max-width: 640px) 100vw, (max-width: 1000px) 50vw, 25vw" />
                 <span>View collection <ArrowRight /></span>
               </div>
-              <div className="product-meta"><small>Collection</small><h3>{category.title}</h3><p>{category.text}</p></div>
+              <div className="product-meta"><small>Collection</small><h3>{collection.title}</h3><p>{collection.intro}</p></div>
             </Link>
           ))}
         </div>

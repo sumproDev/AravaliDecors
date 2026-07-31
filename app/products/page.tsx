@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { categories } from "@/data/site-data";
+import { getPublishedCollections } from "@/lib/cms/public";
 import { PageHero } from "@/components/shared/PageHero";
 import { PageCTA } from "@/components/shared/PageCTA";
 
@@ -19,13 +19,15 @@ export const metadata: Metadata = {
   },
 };
 
-export default function ProductsPage() {
+export default async function ProductsPage() {
+  const collections = (await getPublishedCollections()).filter((collection) => collection.slug !== "interior-designing");
+
   return (
     <main className="inner-page">
       <PageHero
         eyebrow="Products"
         title="Choose a Collection to Explore Its Products"
-        intro="Browse our eight main categories. Every card opens a dedicated page with the related products inside."
+        intro="Browse our main categories. Every card opens a dedicated page with the related products inside."
         image="/images/products/marble-tile-collection-v2.png"
         imageAlt="Floor and wall tile samples from the Aravali Marbles collection"
       />
@@ -38,13 +40,13 @@ export default function ProductsPage() {
             <p>Open a collection to see its available product types and ranges.</p>
           </div>
           <div className="product-grid collection-grid">
-            {categories.map((category) => (
-              <Link className="product-card" href={category.href} key={category.title}>
+            {collections.map((collection) => (
+              <Link className="product-card" href={`/products/${collection.slug}`} key={collection.id}>
                 <div className="product-image">
-                  <Image src={category.image} alt={category.title} fill sizes="(max-width: 640px) 100vw, (max-width: 1000px) 50vw, 25vw" />
+                  <Image src={collection.image} alt={collection.imageAlt} fill sizes="(max-width: 640px) 100vw, (max-width: 1000px) 50vw, 25vw" />
                   <span>View products <ArrowRight /></span>
                 </div>
-                <div className="product-meta"><small>Collection</small><h3>{category.title}</h3><p>{category.text}</p></div>
+                <div className="product-meta"><small>Collection</small><h3>{collection.title}</h3><p>{collection.intro}</p></div>
               </Link>
             ))}
           </div>

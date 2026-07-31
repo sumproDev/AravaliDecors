@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { services } from "@/data/site-data";
+import { getPublishedCollectionBySlug } from "@/lib/cms/public";
 import { PageHero } from "@/components/shared/PageHero";
 import { PageCTA } from "@/components/shared/PageCTA";
 
@@ -19,7 +19,10 @@ export const metadata: Metadata = {
   },
 };
 
-export default function ServicesPage() {
+export default async function ServicesPage() {
+  const serviceCollection = await getPublishedCollectionBySlug("interior-designing");
+  const services = serviceCollection?.products || [];
+
   return (
     <main className="inner-page">
       <PageHero
@@ -68,7 +71,7 @@ export default function ServicesPage() {
                 <div className="collection-product-card__content">
                   <p className="collection-product-card__eyebrow">Interior Designing</p>
                   <h3>{service.name}</h3>
-                  <p>{service.text}</p>
+                  <p>{service.description}</p>
                   <Link href="/contact">Enquire about this service <ArrowRight /></Link>
                 </div>
               </article>

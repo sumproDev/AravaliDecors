@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import { productCollections } from "@/data/site-data";
+import { getPublishedCollectionBySlug, getPublishedCollections } from "@/lib/cms/public";
 import { PageHero } from "@/components/shared/PageHero";
 import { PageCTA } from "@/components/shared/PageCTA";
 
@@ -11,13 +11,9 @@ type ProductCollectionPageProps = {
   params: Promise<{ slug: string }>;
 };
 
-export function generateStaticParams() {
-  return productCollections.map((collection) => ({ slug: collection.slug }));
-}
-
 export async function generateMetadata({ params }: ProductCollectionPageProps): Promise<Metadata> {
   const { slug } = await params;
-  const collection = productCollections.find((item) => item.slug === slug);
+  const collection = await getPublishedCollectionBySlug(slug);
 
   if (!collection) {
     return { title: "Product Collection Not Found" };
@@ -36,11 +32,16 @@ export async function generateMetadata({ params }: ProductCollectionPageProps): 
   };
 }
 
+export async function generateStaticParams() {
+  const collections = await getPublishedCollections();
+  return collections.filter((collection) => collection.slug !== "interior-designing").map((collection) => ({ slug: collection.slug }));
+}
+
 export default async function ProductCollectionPage({ params }: ProductCollectionPageProps) {
   const { slug } = await params;
-  const collection = productCollections.find((item) => item.slug === slug);
+  const collection = await getPublishedCollectionBySlug(slug);
 
-  if (!collection) {
+  if (!collection || collection.slug === "interior-designing") {
     notFound();
   }
 
@@ -63,8 +64,8 @@ export default async function ProductCollectionPage({ params }: ProductCollectio
             <p>{collection.description}</p>
           </div>
           <div className={`collection-product-grid collection-product-grid--${collection.slug}`}>
-            {collection.items.map((item, index) => (
-              <article className="collection-product-card" key={item.name}>
+            {collection.products.map((item, index) => (
+              <article className="collection-product-card" key={item.id}>
                 <div className="collection-product-card__image">
                   <Image
                     src={item.image}
