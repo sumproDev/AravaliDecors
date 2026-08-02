@@ -46,7 +46,10 @@ export function Footer() {
         <div className="footer-column footer-contact">
           <h3>Contact Us</h3>
           <p>
-            <MapPin /> Purnea, Katihar & nearby Bihar
+            <MapPin /> Maranga near Bijendra Public School, Purnia, Bihar
+          </p>
+          <p>
+            <MapPin /> 25, Near DIG Chowk, Purnia, Bihar, pin-854301
           </p>
           <a href="tel:+917654002202">
             <Phone /> +91 76540 02202
