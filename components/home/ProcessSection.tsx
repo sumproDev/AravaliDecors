@@ -5,7 +5,6 @@ const steps = [
   { icon: Handshake, title: "Requirement Discussion", text: "Understand the area, material preference and budget." },
   { icon: Boxes, title: "Product Selection", text: "Choose suitable designs, finishes and sizes." },
   { icon: Ruler, title: "Measure & Estimate", text: "Site measurement and a transparent quotation." },
-  { icon: Wrench, title: "Cutting & Installation", text: "Professional cutting, fitting and finishing." },
   { icon: ClipboardCheck, title: "Delivery & Support", text: "Timely handover and after-sales assistance." },
 ];
 
